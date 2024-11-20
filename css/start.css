@@ -1,4 +1,51 @@
+
 body{
   background-color:#f39c12;
   
 }
+
+#main-wrapper{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 60% 25%;
+  grid-template-rows: 10% 30% 25% 25% 1fr;
+  row-gap: 10%;
+  column-gap: 10px;
+  grid-template-areas: 
+  "nv hd hd"
+  "nv sc1 ."
+  "nv sc2 ."
+  "nv sc3 ."
+  ". ft ."
+
+  ;
+}
+
+header{
+  align-content: center;
+  grid-area: hd;
+  transform: translate(30%);
+}
+nav{
+  grid-area: nv;
+}
+footer{
+  grid-area: ft;
+}
+
+section{
+  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+#sc1{
+  grid-area: sc1;
+}
+#sc2{
+  grid-area: sc2;
+}
+#sc3{
+  grid-area: sc3;
+}
+
