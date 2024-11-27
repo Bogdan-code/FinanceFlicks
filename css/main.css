@@ -1,0 +1,94 @@
+
+body{
+  background-color:#f39c12;
+
+}
+
+.index-wrapper{
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 1fr 60% 25%;
+  grid-template-rows: 20% 30% 30% 25% 1fr;
+  row-gap: 2%;
+  column-gap: 10px;
+  width: 100%;
+  grid-template-areas: 
+  "hd hd hd"
+  "nv sc1 pc1"
+  "nv sc2 pc2"
+  "nv sc3 pc3"
+  ". ft ."
+
+  ;
+}
+
+.index-wrapper header{
+  align-content: center;
+  grid-area: hd;
+  transform: translate(40%);
+}
+.index-wrapper nav{
+  grid-area: nv;
+  display: flex;
+  position: sticky;
+  top:0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+
+}
+
+.index-wrapper nav a{
+  gap: 100px;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: black;
+  border: solid;
+}
+
+.index-wrapper nav a:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+.index-wrapper footer{
+  grid-area: ft;
+  font-size: 10px;
+}
+
+.index-wrapper section{
+  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.index-wrapper #sc1{
+  grid-area: sc1;
+}
+.index-wrapper #sc2{
+  grid-area: sc2;
+}
+.index-wrapper #sc3{
+  grid-area: sc3;
+}
+
+.index-wrapper #pc1{
+  grid-area: pc1;
+  background-image: url(/img/guld.jpg);
+}
+.index-wrapper #pc2{
+  grid-area: pc2;
+  background-image: url(/img/guld.jpg);
+}
+.index-wrapper #pc3{
+  grid-area: pc3;
+  background-image: url(/img/guld.jpg);
+}
+
