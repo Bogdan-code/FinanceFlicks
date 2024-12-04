@@ -6,12 +6,12 @@ body{
 
 .index-wrapper{
   display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 60% 25%;
-  grid-template-rows: 20% 30% 30% 25% 1fr;
+  height: 90vh;
+  width: 97vw;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 15% 30% 25% 20% 1fr;
   row-gap: 2%;
   column-gap: 10px;
-  width: 100%;
   grid-template-areas: 
   "hd hd hd"
   "nv sc1 pc1"
@@ -22,12 +22,15 @@ body{
   ;
 }
 
-.index-wrapper header{
+header{
   align-content: center;
   grid-area: hd;
-  transform: translate(40%);
 }
-.index-wrapper nav{
+
+header h1 {
+  text-align: center;
+}
+nav{
   grid-area: nv;
   display: flex;
   position: sticky;
@@ -39,7 +42,7 @@ body{
 
 }
 
-.index-wrapper nav a{
+nav a{
   gap: 100px;
   width: 100%;
   height: 5rem;
@@ -51,14 +54,14 @@ body{
   border: solid;
 }
 
-.index-wrapper nav a:hover{
+nav a:hover{
   background-color: rgba(0, 0, 0, 0.7);
 
 }
 
 
 
-.index-wrapper footer{
+footer{
   grid-area: ft;
   font-size: 10px;
 }
@@ -92,3 +95,23 @@ body{
   background-image: url(/img/guld.jpg);
 }
 
+
+.about-wrapper{
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 15% 30% 25% 20% 1fr;
+  row-gap: 2%;
+  column-gap: 10px;
+  grid-template-areas: 
+  "hd hd hd"
+  "nv sc1 sc1"
+  "nv sc1 sc1"
+  "nv sc2 sc2"
+  ". ft ."
+  ;
+}
+.about-section1{
+  grid-area: sc1;
+}
+.about-section2{
+  grid-area: sc2;
+}
