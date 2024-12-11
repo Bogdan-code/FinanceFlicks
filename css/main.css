@@ -22,6 +22,24 @@ body{
   ;
 }
 
+
+.about-wrapper{
+  display: grid;
+  height: 90vh;
+  width: 97vw;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 15% 30% 25% 20% 1fr;
+  row-gap: 2%;
+  column-gap: 10px;
+  grid-template-areas: 
+  "hd hd hd"
+  "nv sc1 sc1"
+  "nv sc1 sc1"
+  "nv sc2 sc2"
+  ". ft ."
+  ;
+}
+
 header{
   align-content: center;
   grid-area: hd;
@@ -96,22 +114,44 @@ footer{
 }
 
 
-.about-wrapper{
-  grid-template-columns: 20% 1fr 20%;
-  grid-template-rows: 15% 30% 25% 20% 1fr;
-  row-gap: 2%;
-  column-gap: 10px;
-  grid-template-areas: 
-  "hd hd hd"
-  "nv sc1 sc1"
-  "nv sc1 sc1"
-  "nv sc2 sc2"
-  ". ft ."
-  ;
-}
+
 .about-section1{
   grid-area: sc1;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
+
+.about-section1 div{
+  background-color: rgba(132, 133, 122, 0.895);
+  display: flex;
+  flex: 1;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-section1 div h2{
+  text-align: center;
+}
+
+.about-section1 div img{
+  width: 150px;
+  height: 150px;
+
+  border-radius: 100px;
+  
+}
+.about-section1 div:nth-child(1){
+}
+.about-section1 div:nth-child(2){
+}
+.about-section1 div:nth-child(3){
+}
+
 .about-section2{
   grid-area: sc2;
+  background-color: black;
 }
+
