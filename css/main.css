@@ -87,6 +87,11 @@ body{
   margin-left: 300px;
   margin-right: 300px;
 }
+#inputs button h2{
+  text-align: center;
+  margin-top: 0;
+}
+
 
 #inputs h2{
   margin-bottom: 0;
@@ -158,11 +163,14 @@ footer{
 }
 .index-wrapper #pc2{
   grid-area: pc2;
-  background-image: url(/img/guld.jpg);
+  background-image: url(/img/investering.jpg);
+  background-size: cover;
+
 }
 .index-wrapper #pc3{
   grid-area: pc3;
-  background-image: url(/img/guld.jpg);
+  background-image: url(/img/rikapersoner.jpg);
+  background-size: cover;
 }
 
 
